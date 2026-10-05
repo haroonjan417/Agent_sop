@@ -1,4 +1,5 @@
 import os
+import re
 import streamlit as st
 from tools import build_vectorstore_from_files
 from agent import run_sop_agent
@@ -108,6 +109,6 @@ if st.button("Analyze & Generate Action Plan", type="primary"):
                 )
                 st.success("Action Plan Ready for Approval")
                 st.markdown("---")
-                st.markdown(result.raw)
+                st.markdown(re.sub(r"<br\s*/?>", " ", result.raw))
             except Exception as e:
                 st.error(f"Execution Error: {str(e)}")
