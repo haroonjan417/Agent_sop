@@ -1,0 +1,6 @@
+SOP-804: Procedure for Receiving Damaged Goods
+1. Quarantine the affected shipment immediately in Bay Q.
+2. Take high-resolution photo evidence of exterior packaging and damaged items.
+3. Issue a Non-Conformance Report (NCR) to the supplier within 24 hours.
+4. Notify QA Lead and Warehouse Supervisor via internal ticket.
+5. Log partial return in ERP under Reason Code: DAMAGED_ON_ARRIVAL.
